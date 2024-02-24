@@ -1,0 +1,289 @@
+.navbar-extra-div {
+    margin: auto;
+    display: flex;
+}
+
+.navbar {
+    padding: 0% !important;
+}
+
+#ribbon-section {
+    background-color: rgb(245, 245, 247);
+}
+
+.top-ribbon {
+    margin: auto;
+    padding: 1em 0em;
+    font-size: larger;
+    max-width: 370px;
+}
+
+.buy-btn {
+    border-radius: 100px;
+}
+
+.sec2Cards {
+    border-radius: 30px;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 30000ms;
+}
+
+.sec2-img-card {
+    width: 90%;
+}
+
+.sec2-img2 {
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.sec2Cards:hover {
+    transform: translateY(-6px);
+    border-radius: 30px;
+
+}
+
+.sec2Cards:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.sec2Cards img {
+    transition: transform 500ms;
+}
+
+.sec2Card3 {
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 300ms;
+}
+
+.img3text {
+    font-size: 25px;
+    font-weight: 550;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: start;
+    margin: 35px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.sec2-img3 {
+    border-radius: 30px
+}
+
+.img2text {
+    font-size: 25px;
+    font-weight: 550;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: start;
+    margin: 35px;
+    z-index: 1;
+    color: whitesmoke;
+}
+
+.get-highlights {
+    width: 90%;
+}
+
+.sec2-img1-div {
+    width: 50%;
+    overflow-y: hidden;
+}
+
+.sec2-img1 {
+    transform: translateY(60px);
+}
+
+.sec2-img1-div2 {
+    background-color: black;
+    position: relative;
+    width: 90%;
+    border-radius: 30px;
+}
+
+.img1text {
+    font-size: 25px;
+    font-weight: 550;
+    width: 17%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: start;
+    margin: 35px;
+    z-index: 1;
+    color: whitesmoke;
+}
+
+/* .owl-dot.active span {
+background: red;
+} */
+.owl-theme .owl-dots .owl-dot span {
+    background: rgba(29, 29, 31, 0.6);
+    height: 8px;
+    width: 8px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: rgba(29, 29, 31, 0.6);
+    width: 50px;
+    height: 8px;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    background-color: rgba(232, 232, 237, 0.7);
+    padding: 15px;
+    width: 13%;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.icons-sec-one {
+    background-color: rgba(232, 232, 237, 0.7);
+    padding: 15px;
+    width: fit-content;
+    border-radius: 100px;
+    margin: auto;
+    /* transform: translate(140px, -54px); */
+    /* transform: translateX(50px); */
+}
+
+/* html, body, main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+   */
+  #carousel {
+    position: relative;
+    height: 400px;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    overflow: hidden;
+  }
+  
+  #carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+  
+  #carousel div img {
+    width: 400px;
+    transition: width 1s;
+  }
+  
+  #carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  
+  #carousel div.hideLeft img {
+    width: 200px;
+  }
+  
+  #carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  
+  #carousel div.hideRight img {
+    width: 200px;
+  }
+  
+  #carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  
+  #carousel div.prev img {
+    width: 300px;
+  }
+  
+  #carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: .7;
+  }
+  
+  #carousel div.prevLeftSecond img {
+    width: 200px;
+  }
+  
+  #carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+  }
+  
+  #carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  
+  #carousel div.next img {
+    width: 300px;
+  }
+  
+  #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: .7;
+  }
+  
+  #carousel div.nextRightSecond img {
+    width: 200px;
+  }
+  
+  .reveal-highlight-heading{
+    position: relative;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .reveal-highlight-heading.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .reveal-highlight-link-one{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1.5s all ease;
+  }
+  .reveal-highlight-link-one.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .reveal-highlight-link-two{
+    position: relative;
+    transform: translateY(110px);
+    opacity: 0;
+    transition: 1.5s all ease;
+  }
+  .reveal-highlight-link-two.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
