@@ -87,7 +87,7 @@ $('#next').click(function () {
 });
 
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal-highlight-heading, .reveal-highlight-link-one, .reveal-highlight-link-two");
+    var reveals = document.querySelectorAll(".reveal-highlight-heading, .reveal-highlight-link-one, .reveal-highlight-link-two, .typography-site-body-text");
 
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
@@ -117,3 +117,47 @@ $(document).ready(function() {
     // Set the same height to all carousel items
     $(".loop .item").css("height", maxHeight + "px");
 });
+
+// Function to check if an element is in viewport
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to handle scroll event
+function handleScroll() {
+    var element = document.querySelector('.section3-text');
+
+    if (isInViewport(element)) {
+        element.classList.add('visible');
+    }
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', function() {
+    handleScroll();
+});
+
+// video loop times in section 3
+const video = document.getElementById('sec3Video');
+const loopCount = 3; // Set the number of times you want the video to loop
+
+let loopIndex = 0;
+
+function handleVideoEnded() {
+    loopIndex++;
+    if (loopIndex < loopCount) {
+        video.play(); // Replay the video if loopIndex is less than loopCount
+    }
+}
+
+// Add event listener for video ended
+video.addEventListener('ended', handleVideoEnded);
+
+// Start playing the video
+video.play();
